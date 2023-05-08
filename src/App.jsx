@@ -10,6 +10,7 @@ import Footer from './components/Footer/Footer'
 import Landing from './pages/Landing/Landing'
 import About from './pages/About/About'
 import Contact from './pages/Contact/Contact'
+import Resume from './pages/Resume/Resume'
 import Portfolio from './pages/Portfolio/Portfolio'
 
 //css
@@ -25,6 +26,7 @@ function App() {
         <Route path='/' element={<Landing daytime={daytime} />}/>
         <Route path='/about' element={<About daytime={daytime}/>}/>
         <Route path='/contact' element={<Contact daytime={daytime}/>}/>
+        <Route path='/resume' element={<Resume daytime={daytime}/>}/>
         <Route path='/portfolio' element={<Portfolio daytime={daytime}/>}/>
       </Routes>
       <Footer setDayTime={setDaytime}/>

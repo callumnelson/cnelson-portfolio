@@ -1,5 +1,4 @@
 
-
 const Landing = ({daytime}) => {
 
   return (
