@@ -1,42 +1,111 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  padding: 0px 15px 0px 15px;
+  border-bottom: 1px solid rgb(212, 212, 212);
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.navigation-bar {
+  height: 80px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navigation-bar a:hover {
+  border-bottom: 2px solid #60dafb;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+#logo:hover {
+  border-bottom: none;
 }
 
-.card {
-  padding: 2em;
+nav h1 {
+  margin-right: auto;
+  font-weight: 700;
 }
 
-.read-the-docs {
-  color: #888;
+#logo {
+  display: flex;
+  margin: 0;
+  margin-right: auto;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+#logo > img {
+  border-radius: 50%;
+  height: 60px;
+}
+
+.navigation-bar a {
+  text-decoration: none;
+  margin-left: 24px;
+  font-weight: 500;
+  font-size: 16px;
+  color: black;
+}
+
+.display-items {
+  font-size: 14px;
+  font-weight: 500;
+  margin-left: 24px;
+  border-radius: 100px;
+  -webkit-appearance: none;
+  padding: 6px 14px 6px 14px;
+  border: 1px solid #dbdbdb;
+}
+
+.display-items:hover {
+  cursor: pointer;
+}
+
+h1.landing-header {
+  margin: 20vh 0 0 0;
+  color: white;
+  font-weight: 900;
+  font-size: 3rem;
+  font-style: normal;
+  font-family: blenny, sans-serif;
+  text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.85);
+}
+
+h2.landing-header {
+  margin: 0;
+  color: white;
+  font-weight: 900;
+  font-size: 2rem;
+  font-style: normal;
+  font-family: blenny, sans-serif;
+  text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.85);
+}
+
+.landing {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: start;
+  background-size: cover;
+  background-position: center center;
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem; 
+}
+
+.icon-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.icon-container > a {
+  color: white;
+}
+
+.icon-container > a:hover {
+  font-weight: 700;
+  text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.85);
 }
