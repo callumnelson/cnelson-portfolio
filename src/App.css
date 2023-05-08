@@ -11,7 +11,7 @@ nav {
 }
 
 .navigation-bar a:hover {
-  border-bottom: 2px solid #60dafb;
+  border-bottom: 2px solid rgb(0, 0, 122)
 }
 
 #logo:hover {
@@ -34,6 +34,7 @@ nav h1 {
 #logo > img {
   border-radius: 50%;
   height: 60px;
+  border: 3px solid rgb(0, 0, 122);
 }
 
 .navigation-bar a {
@@ -58,32 +59,35 @@ nav h1 {
   cursor: pointer;
 }
 
-h1.landing-header {
-  margin: 20vh 0 0 0;
-  color: white;
-  font-weight: 900;
-  font-size: 3rem;
-  font-style: normal;
-  font-family: blenny, sans-serif;
-  text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.85);
-}
-
-h2.landing-header {
+.landing-header {
   margin: 0;
   color: white;
   font-weight: 900;
-  font-size: 2rem;
+  font-size: 5vmax;
   font-style: normal;
   font-family: blenny, sans-serif;
   text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.85);
+  text-align: center;
 }
 
-.landing {
+h1.landing-header {
+  margin: 20vh 0 0 0;
+}
+
+h2.landing-header {
+  font-size: 2.5vmax;
+}
+
+.page-container {
   height: 100%;
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: start;
+  background-color: darkgray;
+}
+
+.landing {
   background-size: cover;
   background-position: center center;
 }

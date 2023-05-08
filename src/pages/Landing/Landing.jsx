@@ -1,12 +1,12 @@
 //Assets
-import BostonDay from '../assets/BostonDay.png'
-import BostonNight from '../assets/BostonNight.png'
+import BostonDay from '../../assets/BostonDay.png'
+import BostonNight from '../../assets/BostonNight.png'
 
 const Landing = ({daytime}) => {
 
   return (
     <div 
-      className="landing" 
+      className="page-container landing" 
       style={{ backgroundImage: `url(${daytime ? BostonDay : BostonNight})` }}
     >
       <h1 className='landing-header'>Hi, I'm Callum Nelson</h1>
