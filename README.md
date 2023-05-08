@@ -1,3 +1,1 @@
-# Portolio
-
-Simple portfolio site
+# Portfolio
