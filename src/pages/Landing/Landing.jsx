@@ -2,6 +2,9 @@
 import BostonDay from '../../assets/BostonDay.png'
 import BostonNight from '../../assets/BostonNight.png'
 
+// styling
+import './Landing.css'
+
 const Landing = ({daytime}) => {
 
   return (
