@@ -7,6 +7,7 @@ const Landing = ({daytime}) => {
       className="page-container about" 
     >
      <h1>About Me</h1>
+     
     </div>
   )
 }

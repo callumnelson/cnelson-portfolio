@@ -10,7 +10,6 @@ import Clock from '../Clock/Clock'
 import './NavBar.css'
 
 const NavBar = ({setDaytime}) => {
-  const { pathname } = useLocation()
   
   return (
     <nav className="navigation-bar">
@@ -18,7 +17,6 @@ const NavBar = ({setDaytime}) => {
         <img src={ Headshot } alt="Callum Nelson Headshot" />
       </NavLink>
       <NavLink to="/about">About</NavLink>
-      <NavLink to="/contact">Contact</NavLink>
       <NavLink to="/resume">Resume</NavLink>
       <NavLink to="/portfolio">Portfolio</NavLink>
       <Clock setDaytime={setDaytime}/>

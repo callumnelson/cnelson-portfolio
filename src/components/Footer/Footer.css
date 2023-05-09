@@ -24,4 +24,5 @@
 .icon-container > a:hover {
   font-weight: 700;
   text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.85);
+  transition: all 0.25s;
 }

@@ -11,7 +11,8 @@ nav {
 }
 
 .navigation-bar a:hover {
-  border-bottom: 2px solid rgb(0, 0, 122)
+  border-bottom: 2px solid rgb(0, 0, 122);
+  
 }
 
 #logo:hover {
@@ -60,9 +61,25 @@ nav h1 {
   padding: 6px 14px 6px 14px;
   border: 1px solid #dbdbdb;
   color: black;
-  text-overflow: clip;
+  text-align: center;
 }
 
 .display-items:hover {
   cursor: pointer;
+}
+
+@media only screen and (max-width: 480px) {
+  .display-items {
+    display: none;
+  }
+
+  .navigation-bar a {
+    margin: 0 6px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .navigation-bar a, .display-items {
+    margin: 0 6px;
+  }
 }
