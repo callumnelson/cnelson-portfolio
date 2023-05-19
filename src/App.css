@@ -25,3 +25,7 @@ html, body {
   border-left: 0.5px solid black;
   overflow: scroll;
 }
+
+h1 {
+  margin: 0;
+}
