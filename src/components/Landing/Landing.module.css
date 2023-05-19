@@ -1,35 +1,12 @@
 .container {
   background-size: cover;
   background-position: center center;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: end;
   padding: 60px 15px;
-}
-
-.header {
-  margin: 0;
-  color: white;
-  font-weight: 900;
-  font-size: 5vmax;
-  font-style: normal;
-  font-family: blenny, sans-serif;
-  text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.85);
-  text-align: center;
-  margin: 0;
-}
-
-.subheader {
-  margin: 0;
-  color: white;
-  font-weight: 900;
-  font-size: 2.55vmax;
-  font-style: normal;
-  font-family: blenny, sans-serif;
-  text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.85);
-  text-align: center;
 }
 
 .downDay i {

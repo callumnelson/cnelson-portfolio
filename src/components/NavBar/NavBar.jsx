@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom'
 
 // Components & Assets
 import Headshot from '../../assets/headshot.png'
-import Clock from '../Clock/Clock'
 
 // styling
 import styles from './NavBar.module.css'
