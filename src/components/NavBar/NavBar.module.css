@@ -19,13 +19,18 @@
 
 .name img {
   border-radius: 50%;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   width: min(40%, 130px);
   box-shadow: rgb(58, 65, 75) 0px 0px 10px 0px;
 }
 
-.name h1 {
-  font-size: 3vw;
+.name h1:nth-child(2) {
+  font-size: 4vw;
+  font-weight: 200;
+}
+
+.name h1:nth-child(3) {
+  font-size: 2.5vw;
   font-weight: 200;
 }
 

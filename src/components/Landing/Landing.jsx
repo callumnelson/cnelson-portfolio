@@ -2,8 +2,8 @@
 import { HashLink } from 'react-router-hash-link'
 
 // assets
-import BostonDay from '../../assets/BostonDay.png'
-import BostonNight from '../../assets/BostonNight.png'
+import BostonDay from '../../assets/images/BostonDay.png'
+import BostonNight from '../../assets/images/BostonNight.png'
 
 // styling
 import styles from './Landing.module.css'

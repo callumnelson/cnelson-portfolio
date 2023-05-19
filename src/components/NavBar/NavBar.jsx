@@ -1,10 +1,9 @@
 // modules
 import { Link } from 'react-router-dom'
 import { HashLink } from 'react-router-hash-link';
-import { useState } from 'react';
 
 // Components & Assets
-import Headshot from '../../assets/headshot.png'
+import Headshot from '../../assets/images/headshot.png'
 
 // styling
 import styles from './NavBar.module.css'

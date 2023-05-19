@@ -17,7 +17,8 @@ const About = ({daytime}) => {
       </div>
       <div className={styles.divider}></div>
       <div className={styles.about}>
-        <p>Hi, I'm Callum. I'm a full-stack engineer living in London, born and raised in the greater Boston area. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        <p>Hi, I'm Callum. I'm a full-stack developer living in London, born and raised in the greater Boston area. I am a former teacher, data analyst, and education resource equity consultant with expertise in data analysis, project planning, and team management in a highly collaborative environment. Now, I build tools that empower leaders with timely and actionable insights.</p>
+        <button>Let's Connect</button>
       </div>
     </section>
   )

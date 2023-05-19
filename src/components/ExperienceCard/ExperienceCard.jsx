@@ -1,6 +1,9 @@
 // styles
 import styles from './ExperienceCard.module.css'
 
+// components
+import Icon from '../Icon/Icon'
+
 const ExperienceCard = ({content}) => {
   const empty = !content.organization
 
@@ -9,8 +12,17 @@ const ExperienceCard = ({content}) => {
       {
         !empty && 
         <>
-          <h1>{content.organization}</h1>
-          <p>Card goes here</p>
+          <header>
+            <h1>{content.organization}</h1>
+            <Icon category={content.logo} />
+          </header>
+          <div className={styles.body}>
+            <div>
+              <p>{content.role}</p>
+              <p>{content.start} - {content.end}</p>
+            </div>
+            <p>{content.description}</p>
+          </div>
         </>
       }
     </div>
