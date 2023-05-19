@@ -21,7 +21,7 @@
 }
 
 .content img {
-  height: 2.5vw;
+  width: 3vw;
   filter: drop-shadow(rgba(58, 65, 75, 0.5) 0px 0px 5px);
 }
 
@@ -32,6 +32,7 @@
 .body div {
   display: flex;
   justify-content: space-between;
+  color: var(--secondary);
 }
 
 .body p:nth-child(2) {
