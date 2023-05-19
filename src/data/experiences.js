@@ -43,5 +43,6 @@ export const experiences = [{},
     start: '2017',
     end: '2013'
   },
+  
 ]
 

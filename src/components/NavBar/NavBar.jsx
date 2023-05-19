@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import { HashLink } from 'react-router-hash-link';
 
 // Components & Assets
-import Headshot from '../../assets/images/headshot.png'
+import headshot from '../../assets/images/headshot.png'
 
 // styling
 import styles from './NavBar.module.css'
@@ -13,7 +13,7 @@ const NavBar = ({section, setSection}) => {
   return (
     <nav className={styles.navbar}>
       <div className={styles.name}>
-        <img src={ Headshot } alt="Callum Nelson Headshot" />
+        <img src={ headshot } alt="Callum Nelson Headshot" />
         <h1>Callum</h1>
         <h1>Nelson</h1>
       </div>

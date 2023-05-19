@@ -6,6 +6,7 @@ import NavBar from './components/NavBar/NavBar'
 import Landing from './components/Landing/Landing'
 import About from './components/About/About'
 import Experiences from './components/Experiences/Experiences'
+import Portfolio from './components/Portfolio/Portfolio'
 
 // services
 import { getMinutes } from "./modules/functions"
@@ -44,6 +45,7 @@ function App() {
         <Landing name={'landing'} daytime={daytime} setSection={setSection}/>
         <About />
         <Experiences />
+        <Portfolio />
       </div>
     </>
   )

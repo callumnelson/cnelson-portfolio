@@ -2,8 +2,8 @@
 import { HashLink } from 'react-router-hash-link'
 
 // assets
-import BostonDay from '../../assets/images/BostonDay.png'
-import BostonNight from '../../assets/images/BostonNight.png'
+import bostonDay from '../../assets/images/bostonDay.png'
+import bostonNight from '../../assets/images/bostonNight.png'
 
 // styling
 import styles from './Landing.module.css'
@@ -13,7 +13,7 @@ const Landing = ({daytime, setSection}) => {
   return (
     <section 
       className={styles.container} 
-      style={{ backgroundImage: `url(${daytime ? BostonDay : BostonNight})` }}
+      style={{ backgroundImage: `url(${daytime ? bostonDay : bostonNight})` }}
     >
       <div className={daytime ? styles.downDay : styles.downNight}>
         <HashLink smooth to={'/#about'}>
