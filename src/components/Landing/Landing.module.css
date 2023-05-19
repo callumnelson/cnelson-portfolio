@@ -28,7 +28,7 @@
 }
 
 .container i {
-  animation: bounce 3s 1;
+  animation: bounce 2.5s 2s 1;
 }
 
 @keyframes bounce {
