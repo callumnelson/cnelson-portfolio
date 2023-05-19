@@ -23,10 +23,10 @@ const NavBar = () => {
         <HashLink smooth to={'/#about'} onClick={() => setSection('about')}>
           <p className={section === 'about' ? styles.selected : ''}>About</p>
         </HashLink>
-        <HashLink smooth to={'/#resume'}>
-          <p className={section === 'resume' ? styles.selected : ''}>Resume</p>
+        <HashLink smooth to={'/#experience'} onClick={() => setSection('experience')}>
+          <p className={section === 'experience' ? styles.selected : ''}>Experience</p>
         </HashLink>
-        <HashLink smooth to={'/#portfolio'}>
+        <HashLink smooth to={'/#portfolio'} onClick={() => setSection('portfolio')}>
           <p className={section === 'portfolio' ? styles.selected : ''}>Portfolio</p>
         </HashLink>
       </div>

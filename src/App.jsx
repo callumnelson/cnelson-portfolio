@@ -5,6 +5,7 @@ import { useState, useEffect } from 'react'
 import NavBar from './components/NavBar/NavBar'
 import Landing from './components/Landing/Landing'
 import About from './components/About/About'
+import Experience from './components/Experience/Experience'
 
 // services
 import { getMinutes } from "./modules/functions"
@@ -41,6 +42,7 @@ function App() {
       <div className='main'>
         <Landing name={'landing'} daytime={daytime}/>
         <About />
+        <Experience />
       </div>
     </>
   )
