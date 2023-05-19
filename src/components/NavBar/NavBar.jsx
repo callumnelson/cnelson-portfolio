@@ -1,6 +1,7 @@
 // modules
 import { Link } from 'react-router-dom'
 import { HashLink } from 'react-router-hash-link';
+import { useState } from 'react';
 
 // Components & Assets
 import Headshot from '../../assets/headshot.png'
@@ -9,6 +10,7 @@ import Headshot from '../../assets/headshot.png'
 import styles from './NavBar.module.css'
 
 const NavBar = () => {
+  const [section, setSection] = useState('landing')
   
   return (
     <nav className={styles.navbar}>
@@ -18,9 +20,15 @@ const NavBar = () => {
         <h1>Nelson</h1>
       </div>
       <div className={styles.destinations}>
-        <HashLink smooth to={'/#about'}><p>About</p></HashLink>
-        <HashLink smooth to={'/#about'}><p>Resume</p></HashLink>
-        <HashLink smooth to={'/#about'}><p>Portfolio</p></HashLink>
+        <HashLink smooth to={'/#about'} onClick={() => setSection('about')}>
+          <p className={section === 'about' ? styles.selected : ''}>About</p>
+        </HashLink>
+        <HashLink smooth to={'/#resume'}>
+          <p className={section === 'resume' ? styles.selected : ''}>Resume</p>
+        </HashLink>
+        <HashLink smooth to={'/#portfolio'}>
+          <p className={section === 'portfolio' ? styles.selected : ''}>Portfolio</p>
+        </HashLink>
       </div>
       <div className={styles.footer}>
         <Link to="https://github.com/callumnelson" target="_blank" rel="noreferrer">

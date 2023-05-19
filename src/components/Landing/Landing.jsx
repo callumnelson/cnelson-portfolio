@@ -1,5 +1,5 @@
 // npm modules
-import { useState, useEffect } from 'react'
+import { HashLink } from 'react-router-hash-link'
 
 // assets
 import BostonDay from '../../assets/BostonDay.png'
@@ -16,7 +16,9 @@ const Landing = ({daytime}) => {
       style={{ backgroundImage: `url(${daytime ? BostonDay : BostonNight})` }}
     >
       <div className={daytime ? styles.downDay : styles.downNight}>
-        <i className="fa-solid fa-angle-down fa-2xl"></i>
+        <HashLink smooth to={'/#about'}>
+          <i className="fa-solid fa-angle-down fa-2xl"></i>
+        </HashLink>
       </div>
     </section>
   )
