@@ -5,18 +5,17 @@ import { useState } from 'react'
 import NavBar from './components/NavBar/NavBar'
 
 //pages
-import Landing from './pages/Landing/Landing'
+import Landing from './components/Landing/Landing'
 
 //css
 import './App.css'
 
 function App() {
-  const [daytime, setDaytime] = useState(true)
   const [section, setSection] = useState('landing')
 
   return (
     <>
-      <NavBar setDaytime={setDaytime}/>
+      <NavBar/>
       <div className='main'>
         <Landing name={'landing'}/>
       </div>

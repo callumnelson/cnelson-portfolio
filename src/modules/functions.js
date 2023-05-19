@@ -1,5 +1,3 @@
-//Code sourced from Hunter Long
-
 const getMinutes = (str) => {
   const timeArr = str.split(':')
   const suffix = str.split(' ')[1] === 'PM' ? 720 : 0

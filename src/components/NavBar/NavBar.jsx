@@ -8,7 +8,7 @@ import Clock from '../Clock/Clock'
 // styling
 import styles from './NavBar.module.css'
 
-const NavBar = ({setDaytime}) => {
+const NavBar = () => {
   
   return (
     <nav className={styles.navbar}>
@@ -21,7 +21,6 @@ const NavBar = ({setDaytime}) => {
         <p>About</p>
         <p>Resume</p>
         <p>Portfolio</p>
-        <Clock setDaytime={setDaytime}/>
       </div>
       <div className={styles.footer}>
         <Link to="https://github.com/callumnelson" target="_blank" rel="noreferrer">
