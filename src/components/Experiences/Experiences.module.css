@@ -10,6 +10,10 @@
   margin-top: 42px;
 }
 
+.last {
+  background-color: transparent;
+}
+
 .circle {
   z-index: 10;
   width: 30px;

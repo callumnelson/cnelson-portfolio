@@ -88,4 +88,5 @@
 
 .footer > a:hover {
   color:rgb(74, 150, 255);
+  transition: color 0.25s ease-in-out;
 }

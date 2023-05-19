@@ -22,10 +22,17 @@ const Experiences = ({daytime}) => {
         {experiences.map( (experience, idx) => (
           <>
             <ExperienceCard content={experience}/>
-            {!(idx % 2) &&
-            <div className={styles.timeline}>
-              <div className={styles.circle}></div>
-            </div>
+            {!(idx % 2) ? 
+            idx < experiences.length - 2 ?
+              <div className={styles.timeline}>
+                <div className={styles.circle}></div>
+              </div>
+                :
+              <div className={`${styles.timeline} ${styles.last}`}>
+                <div className={styles.circle}></div>
+              </div>
+            :
+              <></>
             }
           </>
         ))}
