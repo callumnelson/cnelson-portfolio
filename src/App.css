@@ -12,7 +12,9 @@ html, body {
   font-family: 'Alegreya Sans SC', sans-serif;
   background-color: white;
   --primary: rgb(74, 150, 255);
-  --secondary: rgb(0, 80, 192);
+  --secondary: rgb(1, 62, 148);
+  --whiteText: rgb(240, 240, 240);
+  --blackText: rgb(15, 15, 15);
 }
 
 #root {
