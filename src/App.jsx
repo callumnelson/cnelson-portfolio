@@ -16,6 +16,7 @@ import './App.css'
 function App() {
   const [daytime, setDaytime] = useState(true)
   const [date, setDate] = useState(new Date())
+  const [section, setSection] = useState('landing')
   
   const time = date.toLocaleTimeString([], {
     hour: 'numeric',
@@ -38,9 +39,9 @@ function App() {
 
   return (
     <>
-      <NavBar/>
+      <NavBar section={section} setSection={setSection}/>
       <div className='main'>
-        <Landing name={'landing'} daytime={daytime}/>
+        <Landing name={'landing'} daytime={daytime} setSection={setSection}/>
         <About />
         <Experience />
       </div>

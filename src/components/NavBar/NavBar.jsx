@@ -9,8 +9,7 @@ import Headshot from '../../assets/headshot.png'
 // styling
 import styles from './NavBar.module.css'
 
-const NavBar = () => {
-  const [section, setSection] = useState('landing')
+const NavBar = ({section, setSection}) => {
   
   return (
     <nav className={styles.navbar}>
