@@ -1,5 +1,6 @@
 // modules
 import { Link } from 'react-router-dom'
+import { HashLink } from 'react-router-hash-link';
 
 // Components & Assets
 import Headshot from '../../assets/headshot.png'
@@ -17,9 +18,9 @@ const NavBar = () => {
         <h1>Nelson</h1>
       </div>
       <div className={styles.destinations}>
-        <p>About</p>
-        <p>Resume</p>
-        <p>Portfolio</p>
+        <HashLink smooth to={'/#about'}><p>About</p></HashLink>
+        <HashLink smooth to={'/#about'}><p>Resume</p></HashLink>
+        <HashLink smooth to={'/#about'}><p>Portfolio</p></HashLink>
       </div>
       <div className={styles.footer}>
         <Link to="https://github.com/callumnelson" target="_blank" rel="noreferrer">

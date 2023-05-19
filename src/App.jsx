@@ -13,7 +13,6 @@ import { getMinutes } from "./modules/functions"
 import './App.css'
 
 function App() {
-  const [section, setSection] = useState('landing')
   const [daytime, setDaytime] = useState(true)
   const [date, setDate] = useState(new Date())
   
@@ -41,7 +40,7 @@ function App() {
       <NavBar/>
       <div className='main'>
         <Landing name={'landing'} daytime={daytime}/>
-        <About name={'about'}/>
+        <About />
       </div>
     </>
   )
