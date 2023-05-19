@@ -3,31 +3,23 @@ import { useState } from 'react'
 
 //components
 import NavBar from './components/NavBar/NavBar'
-import { Routes, Route } from 'react-router-dom'
-import Footer from './components/Footer/Footer'
 
 //pages
 import Landing from './pages/Landing/Landing'
-import About from './pages/About/About'
-import Resume from './pages/Resume/Resume'
-import Portfolio from './pages/Portfolio/Portfolio'
 
 //css
 import './App.css'
 
 function App() {
   const [daytime, setDaytime] = useState(true)
+  const [section, setSection] = useState('landing')
 
   return (
     <>
       <NavBar setDaytime={setDaytime}/>
-      <Routes>
-        <Route path='/' element={<Landing daytime={daytime} />}/>
-        <Route path='/about' element={<About daytime={daytime}/>}/>
-        <Route path='/resume' element={<Resume daytime={daytime}/>}/>
-        <Route path='/portfolio' element={<Portfolio daytime={daytime}/>}/>
-      </Routes>
-      <Footer setDayTime={setDaytime}/>
+      <div className='main'>
+        <Landing name={'landing'}/>
+      </div>
     </>
   )
 }

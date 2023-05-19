@@ -3,18 +3,18 @@ import BostonDay from '../../assets/BostonDay.png'
 import BostonNight from '../../assets/BostonNight.png'
 
 // styling
-import './Landing.css'
+import styles from './Landing.module.css'
 
 const Landing = ({daytime}) => {
 
   return (
-    <div 
-      className="page-container landing" 
+    <section 
+      className={styles.container} 
       style={{ backgroundImage: `url(${daytime ? BostonDay : BostonNight})` }}
     >
-      <h1 className='landing-header'>Hi, I'm Callum Nelson</h1>
-      <h2 className='landing-header'>I'm a full-stack engineer living in London, raised in Boston</h2>
-    </div>
+      <h1 className={styles.header}>Hi, I'm Callum Nelson</h1>
+      <h2 className={styles.subheader}>I'm a full-stack engineer living in London, raised in Boston</h2>
+    </section>
   )
 }
 
