@@ -34,5 +34,15 @@ export const experiences = [{},
     end: '2018'
   },
   {},
+  {},
+  {
+    organization: 'Brown',
+    logo: 'BROWN',
+    role: 'Undergraduate',
+    description: `At Brown, I double majored in Computer Science and Education Policy. I wrote my honors thesis about my hometown (Cambridge, MA) and its decision to restructure its K-8 schools into middle schools in pursuit of equity. I also played club soccer and was an outdoor orientation trip leader for Brown Outdoor Leadership Training (BOLT)!`,
+    start: '2017',
+    end: '2013'
+  },
+  {},
 ]
 

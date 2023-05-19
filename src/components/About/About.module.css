@@ -31,7 +31,7 @@
 }
 
 .about button {
-  width: 20%;
+  width: max(20%, 150px);
   padding: 10px;
   color: white;
   font-size: 18px;

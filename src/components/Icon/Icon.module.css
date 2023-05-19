@@ -1,0 +1,12 @@
+.GA {
+  width: 6vw;
+  display: flex;
+}
+
+.ERS, .KIPP, .BROOKE {
+  width: 4vw;
+}
+
+.BROWN {
+  height: 4vw;
+}
