@@ -21,7 +21,6 @@ const Landing = ({daytime, setSection}) => {
             className="fa-solid fa-angle-down fa-2xl"
             onClick={() => setSection('about')}
           >
-
           </i>
         </HashLink>
       </div>
