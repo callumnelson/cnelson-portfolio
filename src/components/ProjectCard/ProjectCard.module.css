@@ -35,7 +35,8 @@
 .info {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  padding-bottom: 15px;
 }
 
 .links, .links a {
