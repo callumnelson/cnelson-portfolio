@@ -35,7 +35,7 @@ const NavBar = ({section, setSection}) => {
         <Link to="mailto:callum.nelson95@gmail.com" target="_blank" rel="noreferrer">
           <i className="fa-solid fa-envelope fa-xl"></i>
         </Link>
-        <Link to="https://www.linkedin.com/callum-nelson" target="_blank" rel="noreferrer">
+        <Link to="https://www.linkedin.com/in/callum-nelson/" target="_blank" rel="noreferrer">
           <i className="fa-brands fa-linkedin fa-xl"></i>
         </Link>
       </div>

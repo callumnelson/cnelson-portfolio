@@ -1,5 +1,5 @@
 //node modules
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 
 //components
 import NavBar from './components/NavBar/NavBar'
@@ -15,9 +15,21 @@ import { getMinutes } from "./modules/functions"
 import './App.css'
 
 function App() {
+  const ref = useRef()
   const [daytime, setDaytime] = useState(true)
   const [date, setDate] = useState(new Date())
   const [section, setSection] = useState('landing')
+  const [scrollPosition, setScrollPosition] = useState(0);
+
+  useEffect(() => {
+    const main = ref.current
+    const updatePosition = () => {
+      setScrollPosition(main.scrollTop)
+    }
+    main.addEventListener('scroll', updatePosition)
+    updatePosition()
+    return () => main.removeEventListener('scroll', updatePosition)
+  }, []);
   
   const time = date.toLocaleTimeString([], {
     hour: 'numeric',
@@ -38,10 +50,12 @@ function App() {
     return () => clearInterval(intervalId)
   }, [currentTime, setDaytime])
 
+  console.log(scrollPosition)
+
   return (
     <>
       <NavBar section={section} setSection={setSection}/>
-      <div className='main'>
+      <div id='main' ref={ref}>
         <Landing name={'landing'} daytime={daytime} setSection={setSection}/>
         <About />
         <Experiences />

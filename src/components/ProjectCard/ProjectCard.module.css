@@ -39,14 +39,19 @@
   padding-bottom: 15px;
 }
 
-.links, .links a {
+.links a {
   display: flex;
   align-items: center;
   gap: 15px;
 }
 
-.links a:hover {
+.links {
+  display: flex;
+  justify-content: space-evenly;
+}
 
+.container:hover .links i, .container:hover .links p, .container:hover a {
+  color: var(--blackText);
 }
 
 .links i, .links p, .links a {
@@ -54,6 +59,3 @@
   color: var(--whiteText);
 }
 
-.container:hover .links i, .container:hover .links p, .container:hover a {
-  color: var(--blackText);
-}
