@@ -1,4 +1,5 @@
 .othello, .battleOfTheBooks, .applicant {
   width: 40%;
   border-radius: 2px;
+  border: 0.5px solid var(--blackText);
 }

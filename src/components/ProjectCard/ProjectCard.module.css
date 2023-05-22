@@ -10,8 +10,8 @@
 
 .container:hover {
   color: var(--blackText);
-  background-color: var(--primary);
-  border-left: 3px solid var(--whiteText);
+  background-color: var(--whiteText);
+  border-left: 3px solid var(--blackText);
   transition: all 0.5s ease-in-out;
 }
 
@@ -57,5 +57,28 @@
 .links i, .links p, .links a {
   text-decoration: none;
   color: var(--whiteText);
+}
+
+.stack {
+  display: flex;
+  justify-content: start;
+}
+
+.stack img {
+  width: 2.5vw;
+}
+
+.stack p {
+  font-size: 1vw;
+}
+
+.stack div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+  margin-right: 15px;
+  flex-grow: 1;
 }
 

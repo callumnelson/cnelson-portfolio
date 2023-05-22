@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 
 // components
 import Screenshot from '../Screenshot/Screenshot'
+import Icon from '../Icon/Icon'
 
 // css
 import styles from './ProjectCard.module.css'
@@ -18,7 +19,12 @@ const ProjectCard = ({project}) => {
         <div className={styles.info}>
           <p>{project.description}</p>
           <div className={styles.stack}>
-
+            {project.technologies.map( (tech, idx) => (
+              <div key={idx}>
+                <Icon category={tech} key={idx}/>
+                <p>{tech}</p>
+              </div> 
+            ))}
           </div>
           <div className={styles.links}>
           <Link to={project.githubLink} target="_blank" rel="noreferrer">
