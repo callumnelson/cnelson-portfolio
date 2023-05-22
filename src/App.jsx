@@ -58,9 +58,9 @@ function App() {
 
   return (
     <>
-      <NavBar section={section} setSection={setSection}/>
+      <NavBar section={section}/>
       <div id='main' ref={mainRef}>
-        <Landing name={'landing'} daytime={daytime} setSection={setSection}/>
+        <Landing name={'landing'} daytime={daytime}/>
         <About />
         <Experiences />
         <Portfolio />

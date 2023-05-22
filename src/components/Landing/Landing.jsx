@@ -8,7 +8,7 @@ import bostonNight from '../../assets/images/bostonNight.png'
 // styling
 import styles from './Landing.module.css'
 
-const Landing = ({daytime, setSection}) => {
+const Landing = ({daytime}) => {
 
   return (
     <section 
@@ -19,7 +19,6 @@ const Landing = ({daytime, setSection}) => {
         <HashLink smooth to={'/#about'}>
           <i 
             className="fa-solid fa-angle-down fa-2xl"
-            onClick={() => setSection('about')}
           >
           </i>
         </HashLink>
