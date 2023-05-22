@@ -15,21 +15,27 @@ import { getMinutes } from "./modules/functions"
 import './App.css'
 
 function App() {
-  const ref = useRef()
+  const mainRef = useRef()
   const [daytime, setDaytime] = useState(true)
   const [date, setDate] = useState(new Date())
   const [section, setSection] = useState('landing')
   const [scrollPosition, setScrollPosition] = useState(0);
 
   useEffect(() => {
-    const main = ref.current
+    const main = mainRef.current
+    const experience = document.getElementById('experience').offsetTop
+    const portfolio = document.getElementById('portfolio').offsetTop
     const updatePosition = () => {
       setScrollPosition(main.scrollTop)
+      if (main.scrollTop > 0 && main.scrollTop < experience) setSection('about')
+      else if (main.scrollTop > 0 && main.scrollTop < portfolio) setSection('experience')
+      else if (main.scrollTop >= portfolio) setSection('portfolio')
+      else setSection('landing')
     }
     main.addEventListener('scroll', updatePosition)
     updatePosition()
     return () => main.removeEventListener('scroll', updatePosition)
-  }, []);
+  }, [scrollPosition]);
   
   const time = date.toLocaleTimeString([], {
     hour: 'numeric',
@@ -50,12 +56,10 @@ function App() {
     return () => clearInterval(intervalId)
   }, [currentTime, setDaytime])
 
-  console.log(scrollPosition)
-
   return (
     <>
       <NavBar section={section} setSection={setSection}/>
-      <div id='main' ref={ref}>
+      <div id='main' ref={mainRef}>
         <Landing name={'landing'} daytime={daytime} setSection={setSection}/>
         <About />
         <Experiences />
