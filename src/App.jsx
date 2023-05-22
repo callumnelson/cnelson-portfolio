@@ -35,7 +35,7 @@ function App() {
     main.addEventListener('scroll', updatePosition)
     updatePosition()
     return () => main.removeEventListener('scroll', updatePosition)
-  }, [scrollPosition]);
+  }, []);
   
   const time = date.toLocaleTimeString([], {
     hour: 'numeric',
