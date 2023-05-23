@@ -11,7 +11,7 @@ import { experiences } from '../../data/experiences'
 // styling
 import styles from './Experiences.module.css'
 
-const Experiences = ({daytime}) => {
+const Experiences = () => {
 
   return (
     <>
@@ -22,18 +22,26 @@ const Experiences = ({daytime}) => {
         >
         {experiences.map( (experience, idx) => (
           <React.Fragment key={idx}>
-            <ExperienceCard key={idx} content={experience}/>
-            {!(idx % 2) ? 
-            idx < experiences.length - 2 ?
-              <div className={styles.timeline}>
-                <div className={styles.circle}></div>
-              </div>
-                :
-              <div className={`${styles.timeline} ${styles.last}`}>
-                <div className={styles.circle}></div>
-              </div>
-            :
-              <></>
+            {!(idx % 2) &&  
+              <>
+                <div></div>
+                <div 
+                  className={styles.timeline}
+                >
+                  <div className={styles.circle}></div>
+                </div>
+              </>
+            }
+            <ExperienceCard key={idx} content={experience} row={idx+1}/>
+            {!!(idx % 2) &&  
+              <>
+                <div 
+                  className={styles.timeline}
+                >
+                  <div className={styles.circle}></div>
+                </div>
+                <div></div>
+              </>
             }
           </React.Fragment>
         ))}

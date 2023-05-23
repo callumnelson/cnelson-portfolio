@@ -4,11 +4,13 @@ import styles from './ExperienceCard.module.css'
 // components
 import Icon from '../Icon/Icon'
 
-const ExperienceCard = ({content}) => {
+const ExperienceCard = ({content, row}) => {
   const empty = !content.organization
 
   return (
-    <div className={empty ? styles.empty : styles.content}>
+    <div 
+      className={empty ? styles.empty : styles.content}
+    >
       {
         !empty && 
         <>

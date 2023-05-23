@@ -23,9 +23,9 @@ function App() {
 
   useEffect(() => {
     const main = mainRef.current
-    const experience = document.getElementById('experience').offsetTop
-    const portfolio = document.getElementById('portfolio').offsetTop
     const updatePosition = () => {
+      const experience = document.getElementById('experience').offsetTop
+      const portfolio = document.getElementById('portfolio').offsetTop
       setScrollPosition(main.scrollTop)
       if (main.scrollTop > 0 && main.scrollTop < experience) setSection('about')
       else if (main.scrollTop > 0 && main.scrollTop < portfolio) setSection('experience')
