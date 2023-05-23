@@ -32,7 +32,7 @@ const Experiences = () => {
                 </div>
               </>
             }
-            <ExperienceCard key={idx} content={experience} row={idx+1}/>
+            <ExperienceCard key={idx} content={experience}/>
             {!!(idx % 2) &&  
               <>
                 <div 

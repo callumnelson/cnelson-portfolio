@@ -4,7 +4,7 @@ import styles from './ExperienceCard.module.css'
 // components
 import Icon from '../Icon/Icon'
 
-const ExperienceCard = ({content, row}) => {
+const ExperienceCard = ({content}) => {
   const empty = !content.organization
 
   return (
