@@ -37,3 +37,14 @@
 .body p:nth-child(2) {
   text-align: justify;
 }
+
+.year {
+  display: flex;
+  justify-content: end;
+  padding: 0 30px;
+  font-size: min(2vw, 32px);
+}
+
+.year h1 {
+  margin: 0;
+}
