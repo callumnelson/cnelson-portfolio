@@ -5,7 +5,8 @@
   padding: 60px 0;
   align-items: center;
   flex-direction: column;
-  background-color: lightgray;
+  background-color: var(--tertiary);
+  border-right: 0.5px solid lightgray;
   justify-content: space-between;
 }
 
@@ -21,15 +22,17 @@
   border-radius: 50%;
   margin-bottom: 15px;
   width: min(40%, 130px);
-  box-shadow: rgb(58, 65, 75) 0px 0px 10px 0px;
+  box-shadow: rgb(198, 222, 255) 0px 0px 10px 0px;
 }
 
 .name h1:nth-child(2) {
+  color: var(--whiteText);
   font-size: 4vw;
   font-weight: 200;
 }
 
 .name h1:nth-child(3) {
+  color: var(--whiteText);
   font-size: 2.5vw;
   font-weight: 200;
 }
@@ -43,7 +46,7 @@
 
 .destinations a {
   text-decoration: none;
-  color: var(--blackText);
+  color: var(--whiteText);
 }
 
 .destinations p {
@@ -83,7 +86,7 @@
 }
 
 .footer > a {
-  color: var(--blackText);
+  color: var(--whiteText);
 }
 
 .footer > a:hover {

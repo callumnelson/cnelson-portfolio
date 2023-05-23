@@ -19,7 +19,7 @@ function App() {
   const [daytime, setDaytime] = useState(true)
   const [date, setDate] = useState(new Date())
   const [section, setSection] = useState('landing')
-  const [scrollPosition, setScrollPosition] = useState(0);
+  const [scrollPosition, setScrollPosition] = useState(0)
 
   useEffect(() => {
     const main = mainRef.current
@@ -60,7 +60,7 @@ function App() {
     <>
       <NavBar section={section}/>
       <div id='main' ref={mainRef}>
-        <Landing name={'landing'} daytime={daytime}/>
+        <Landing daytime={daytime}/>
         <About />
         <Experiences />
         <Portfolio />

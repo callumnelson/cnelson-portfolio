@@ -37,13 +37,13 @@
   font-size: 18px;
   margin-top: 15px;
   border-radius: 20px;
-  border: 2px solid transparent;
-  background-color: var(--primary);
+  border: 2px solid var(--primary);
+  background-color: var(--secondary);
 }
 
 .about button:hover {
   cursor: pointer;
   border: 2px solid var(--primary);
-  background-color: var(--secondary);
+  background-color: var(--tertiary);
   transition: background-color 0.25s ease-in-out;
 }

@@ -6,15 +6,16 @@ html, body {
   margin: 0;
   height: 100%;
   overflow: hidden;
-  background-color: #ececec;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: 'Alegreya Sans SC', sans-serif;
+  font-family: 'Wix Madefor Text', sans-serif;
   background-color: white;
-  --primary: rgb(74, 150, 255);
-  --secondary: rgb(1, 62, 148);
+  --primary: #4f98ff;
+  --secondary: rgb(0, 38, 91);
+  --tertiary: #001430;
   --whiteText: rgb(240, 240, 240);
   --blackText: rgb(15, 15, 15);
+  background-color: var(--secondary);
 }
 
 #root {

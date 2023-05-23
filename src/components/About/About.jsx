@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 // styling
 import styles from './About.module.css'
 
-const About = ({daytime}) => {
+const About = () => {
 
   return (
     <section 
