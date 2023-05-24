@@ -13,7 +13,9 @@ import { projects } from "../../data/projects"
 
 const Portfolio = () => {
   return (
-    <section className={styles.container}>
+    <section 
+      className={styles.container}
+    >
       <Link id='portfolio'></Link>
       <SectionHeader sectionName={'Portfolio'} />
       <div 

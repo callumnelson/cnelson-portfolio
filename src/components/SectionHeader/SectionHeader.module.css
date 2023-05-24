@@ -3,7 +3,9 @@
   padding: 30px;
   color: var(--whiteText);
 }
-
+.header h1 {
+  font-weight: 200;
+}
 .divider {
   width: 50%;
   max-width: 0;

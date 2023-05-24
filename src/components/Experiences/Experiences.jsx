@@ -15,7 +15,9 @@ import styles from './Experiences.module.css'
 const Experiences = () => {
 
   return (
-    <section className={styles.container}>
+    <section 
+      className={styles.container}
+    >
       <Link id='experience'></Link>
       <SectionHeader sectionName={'Experience'} />
       <div 
