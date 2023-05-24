@@ -10,7 +10,7 @@ import Portfolio from './components/Portfolio/Portfolio'
 import Contact from './components/Contact/Contact'
 
 // assets
-import bostonDay from './assets/images/bostonday.png'
+import bostonday from './assets/images/bostonday.png'
 
 //css
 import './App.css'
@@ -49,7 +49,7 @@ function App() {
   return (
     <div 
       className='container'
-      style={{ backgroundImage: `url(${bostonDay})`}}
+      style={{ backgroundImage: `url(${bostonday})`}}
     >
       <NavBar section={section}/>
       <div id='main' ref={mainRef}>
