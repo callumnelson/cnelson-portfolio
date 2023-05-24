@@ -27,12 +27,12 @@ function App() {
 
   useEffect(() => {
     const main = mainRef.current
-    setFullHeight(main.scrollHeight - main.clientHeight)
-    setAboutTop(document.getElementById('about').offsetTop)
-    setExperienceTop(document.getElementById('experience').offsetTop)
-    setPortfolioTop(document.getElementById('portfolio').offsetTop)
-    setContactTop(document.getElementById('contact').offsetTop)
     const updatePosition = () => {
+      setFullHeight(main.scrollHeight - main.clientHeight)
+      setAboutTop(document.getElementById('about').offsetTop)
+      setExperienceTop(document.getElementById('experience').offsetTop)
+      setPortfolioTop(document.getElementById('portfolio').offsetTop)
+      setContactTop(document.getElementById('contact').offsetTop)
       setScrollPosition(main.scrollTop)
       if (main.scrollTop >= aboutTop - 100 && main.scrollTop < experienceTop - 100) setSection('about')
       else if (main.scrollTop > experienceTop - 100 && main.scrollTop < portfolioTop - 100) setSection('experience')
