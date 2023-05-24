@@ -33,20 +33,21 @@ html, body {
 }
 
 #main {
-  gap: var(--sectionMargin);
   width: 80%;
   height: 100%;
   display: flex;
   overflow-y: scroll;
   align-items: center;
   flex-direction: column;
+  gap: var(--sectionMargin);
   border-left: 0.5px solid black;
+  padding: 0 var(--sectionMargin) var(--sectionMargin) var(--sectionMargin);
 }
 
-h1 {
+h1, input, textarea {
   margin: 0;
-  font-family: 'Alegreya Sans SC', sans-serif;
   font-weight: 200;
+  font-family: 'Alegreya Sans SC', sans-serif;
 }
 
 p {

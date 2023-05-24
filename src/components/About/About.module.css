@@ -5,8 +5,6 @@
   align-items: center;
   flex-direction: column;
   margin-top: calc(100vh - 180px);
-  margin-left: var(--sectionMargin);
-  margin-right: var(--sectionMargin);
   background-color: var(--tertiaryTransparent);
 }
 
@@ -56,7 +54,7 @@
 }
 
 .down i {
-  animation: bounce 2.5s 5s infinite;
+  animation: bounce 2.5s 2.5s 3;
 }
 
 @keyframes bounce {
