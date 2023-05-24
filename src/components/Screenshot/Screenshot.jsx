@@ -1,6 +1,6 @@
 //assets
 import applicant from '../../assets/images/applicant.png'
-import battleOfTheBooks from '../../assets/images/battleOfTheBooks.png'
+import battleOfTheBooks from '../../assets/images/battleofthebooks.png'
 import othello from '../../assets/images/othello.png'
 import portfolio from '../../assets/images/portfolio.png'
 

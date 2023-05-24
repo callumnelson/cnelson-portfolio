@@ -10,7 +10,7 @@ import Portfolio from './components/Portfolio/Portfolio'
 import Contact from './components/Contact/Contact'
 
 // assets
-import bostonDay from './assets/images/bostonDay.png'
+import bostonDay from './assets/images/bostonday.png'
 
 //css
 import './App.css'

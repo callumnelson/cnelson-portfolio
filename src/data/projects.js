@@ -17,7 +17,7 @@ export const projects = [
   },
   {
     title: 'Battle of the Books',
-    screenshot: 'battleOfTheBooks',
+    screenshot: 'battleofthebooks',
     description: `Battle of the Books takes teachers' classroom libraries digital. Students can track their reading and submit tickets to their teachers for credit for finishing books. The app consumes Google's Books API to seamlessly pull accurate information on titles, authors, and page numbers.`,
     technologies: ['MONGODB', 'EXPRESS', 'NODE', 'EJS'],
     githubLink: 'https://github.com/callumnelson/battle-of-the-books',
