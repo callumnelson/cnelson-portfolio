@@ -10,12 +10,12 @@ html, body {
   -moz-osx-font-smoothing: grayscale;
   font-family: 'Wix Madefor Text', sans-serif;
   background-color: white;
-  --primary: #4f98ff;
+  --primary: rgb(79, 152, 255);
   --secondary: rgb(0, 38, 91);
-  --tertiary: #001430;
+  --tertiary: rgb(0, 20, 48);
+  --tertiaryTransparent: rgba(0, 20, 48, 0.9);
   --whiteText: rgb(240, 240, 240);
   --blackText: rgb(15, 15, 15);
-  background-color: var(--secondary);
 }
 
 #root {
@@ -23,13 +23,20 @@ html, body {
   display: flex;
 }
 
+.container {
+  width: 100%;
+  display: flex;
+  background-size: cover;
+  background-position: center center;
+}
+
 #main {
   width: 75%;
   height: 100%;
   display: flex;
+  overflow-y: scroll;
   flex-direction: column;
   border-left: 0.5px solid black;
-  overflow-y: scroll;
 }
 
 h1 {

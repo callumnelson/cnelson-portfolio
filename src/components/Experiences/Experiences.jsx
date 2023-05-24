@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 
 // components
 import ExperienceCard from '../ExperienceCard/ExperienceCard'
+import SectionHeader from '../SectionHeader/SectionHeader'
 
 // data
 import { experiences } from '../../data/experiences'
@@ -14,11 +15,11 @@ import styles from './Experiences.module.css'
 const Experiences = () => {
 
   return (
-    <>
+    <section className={styles.container}>
       <Link id='experience'></Link>
-      <section 
-        id='experience'
-        className={styles.container}
+      <SectionHeader sectionName={'Experience'} />
+      <div 
+        className={styles.experiences}
         >
         {experiences.map( (experience, idx) => (
           <React.Fragment key={idx}>
@@ -26,7 +27,7 @@ const Experiences = () => {
               <>
                 <div></div>
                 <div 
-                  className={styles.timeline}
+                  className={idx < experiences.length - 1 ? styles.timeline : styles.last}
                 >
                   <div className={styles.circle}></div>
                 </div>
@@ -36,7 +37,7 @@ const Experiences = () => {
             {!!(idx % 2) &&  
               <>
                 <div 
-                  className={styles.timeline}
+                  className={idx < experiences.length - 1 ? styles.timeline : styles.last}
                 >
                   <div className={styles.circle}></div>
                 </div>
@@ -45,8 +46,8 @@ const Experiences = () => {
             }
           </React.Fragment>
         ))}
-      </section>
-    </>
+      </div>
+    </section>
   )
 }
 

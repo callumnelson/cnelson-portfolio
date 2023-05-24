@@ -1,0 +1,17 @@
+.header {
+  font-size: 32px;
+  padding: 30px;
+  color: var(--whiteText);
+}
+
+.divider {
+  width: 50%;
+  max-width: 0;
+  background-color: var(--whiteText);
+  height: 1px;
+}
+
+.divider {
+  max-width: 50%;
+  transition: max-width 1s linear;
+}
