@@ -14,6 +14,7 @@ import node from '../../assets/icons/node.png'
 import express from '../../assets/icons/express.png'
 import ejs from '../../assets/icons/ejs.png'
 import mui from '../../assets/icons/mui.png'
+import vite from '../../assets/icons/vite.png'
 
 // styles
 import styles from './Icon.module.css'
@@ -34,7 +35,8 @@ const Icon = ({ category }) => {
     NODE: node,
     EXPRESS: express,
     EJS: ejs,
-    MUI: mui
+    MUI: mui,
+    VITE: vite
   }
 
   return (

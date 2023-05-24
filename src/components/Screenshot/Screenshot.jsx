@@ -2,6 +2,7 @@
 import applicant from '../../assets/images/applicant.png'
 import battleOfTheBooks from '../../assets/images/battleOfTheBooks.png'
 import othello from '../../assets/images/othello.png'
+import portfolio from '../../assets/images/portfolio.png'
 
 // styles
 import styles from './Screenshot.module.css'
@@ -11,6 +12,7 @@ const Screenshot = ({ category }) => {
     applicant,
     battleOfTheBooks,
     othello,
+    portfolio
   }
 
   return (

@@ -26,7 +26,7 @@ export const experiences = [
   {
     organization: 'Brooke',
     logo: 'BROOKE',
-    role: '7th Grade Math & Science Teacher',
+    role: '7th Grade Teacher',
     description: `After graduating, I started my career in teaching at the Brooke Charter School in East Boston, where I taught 7th grade math and science as well as 8th grade computer science. Teaching remains the hardest job I've ever had, and though I loved the students and my colleagues, I felt like I was underutilizing significant parts of my skillset, which led me to pursue a more data-focused, quantitative role.`,
     start: '2017',
     end: '2018',
@@ -35,9 +35,9 @@ export const experiences = [
     organization: 'Brown',
     logo: 'BROWN',
     role: 'Undergraduate',
-    description: `At Brown, I double majored in Computer Science and Education Policy. I wrote my honors thesis about my hometown (Cambridge, MA) and its decision to restructure its K-8 schools into middle schools in pursuit of equity. I also played club soccer and was an outdoor orientation trip leader for Brown Outdoor Leadership Training (BOLT)!`,
-    start: '2017',
-    end: '2013',
+    description: `At Brown, I double majored in Computer Science and Education Policy. I wrote my honors thesis about my hometown (Cambridge, MA) and its decision to restructure its K-8 schools into middle schools in pursuit of equity. I also played club soccer and was an outdoor orientation trip leader for Brown Outdoor Leadership Training (BOLT).`,
+    start: '2013',
+    end: '2017',
   },
   
 ]

@@ -1,5 +1,13 @@
 export const projects = [
   {
+    title: 'callumnelson.dev',
+    screenshot: 'portfolio',
+    description: `I built this site using React with Vite as a way to share my portfolio and experiences with the world. I'll continue to update it with new work as I finish projects, so come back soon for more updates!`,
+    technologies: ['REACT', 'VITE', 'CSS'],
+    githubLink: 'https://github.com/callumnelson/applicant-front-end',
+    deployedLink: 'https://job-applicant.netlify.app/'
+  },
+  {
     title: 'appliCANt',
     screenshot: 'applicant',
     description: 'appliCANt is a one-stop-shop for managing your job search. The platform incorporates resources to support the job search (e.g. interview prep guides) with a seamless, spreadsheet-style interface for tracking your applications.',
@@ -10,7 +18,7 @@ export const projects = [
   {
     title: 'Battle of the Books',
     screenshot: 'battleOfTheBooks',
-    description: `Battle of the Books takes teachers' classroom libraries digital. After being admitted to the site by their teacher, students can track their reading and submit tickets to receive credit for finishing books. Battle of the Books consumes Google's Books API to seamlessly pull accurate information on titles, authors, and page numbers.`,
+    description: `Battle of the Books takes teachers' classroom libraries digital. Students can track their reading and submit tickets to their teachers for credit for finishing books. The app consumes Google's Books API to seamlessly pull accurate information on titles, authors, and page numbers.`,
     technologies: ['MONGODB', 'EXPRESS', 'NODE', 'EJS'],
     githubLink: 'https://github.com/callumnelson/battle-of-the-books',
     deployedLink: 'https://battle-of-the-books.fly.dev/'

@@ -47,17 +47,17 @@ function App() {
 
   const currentTime = getMinutes(time)
 
-  useEffect(() => {
-    const intervalId = setInterval(() => {
-      setDate(new Date())
-    }, 60000)
-    if (currentTime > 420 && currentTime < 1020) {
-      setDaytime(true)
-    } else {
-      setDaytime(false)
-    }
-    return () => clearInterval(intervalId)
-  }, [currentTime, setDaytime])
+  // useEffect(() => {
+  //   const intervalId = setInterval(() => {
+  //     setDate(new Date())
+  //   }, 60000)
+  //   if (currentTime > 420 && currentTime < 1020) {
+  //     setDaytime(true)
+  //   } else {
+  //     setDaytime(false)
+  //   }
+  //   return () => clearInterval(intervalId)
+  // }, [currentTime, setDaytime])
 
   return (
     <div 

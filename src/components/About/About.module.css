@@ -1,10 +1,12 @@
 .container {
   display: flex;
   padding: 30px;
-  margin-top: calc(100vh - 180px);
-  margin-bottom: 60px;
+  border-radius: 5px;
   align-items: center;
   flex-direction: column;
+  margin-top: calc(100vh - 180px);
+  margin-left: var(--sectionMargin);
+  margin-right: var(--sectionMargin);
   background-color: var(--tertiaryTransparent);
 }
 

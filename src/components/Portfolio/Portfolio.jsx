@@ -3,6 +3,7 @@ import { Link } from "react-router-dom"
 
 // components
 import ProjectCard from "../ProjectCard/ProjectCard"
+import SectionHeader from "../SectionHeader/SectionHeader"
 
 // css
 import styles from './Portfolio.module.css'
@@ -12,17 +13,17 @@ import { projects } from "../../data/projects"
 
 const Portfolio = () => {
   return (
-    <>
+    <section className={styles.container}>
       <Link id='portfolio'></Link>
-      <section 
-        id='portfolio'
-        className={styles.container}
+      <SectionHeader sectionName={'Portfolio'} />
+      <div 
+        className={styles.projects}
         >
         {projects.map( (project, idx) => (
           <ProjectCard project={project} key={idx}/>
         ))}
-      </section>
-    </>
+      </div>
+    </section>
   )
 }
  
