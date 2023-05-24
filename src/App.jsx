@@ -23,9 +23,11 @@ function App() {
   const [experienceTop, setExperienceTop] = useState(0)
   const [portfolioTop, setPortfolioTop] = useState(0)
   const [contactTop, setContactTop] = useState(0)
+  const [fullHeight, setFullHeight] = useState(0)
 
   useEffect(() => {
     const main = mainRef.current
+    setFullHeight(main.scrollHeight - main.clientHeight)
     setAboutTop(document.getElementById('about').offsetTop)
     setExperienceTop(document.getElementById('experience').offsetTop)
     setPortfolioTop(document.getElementById('portfolio').offsetTop)
@@ -48,7 +50,7 @@ function App() {
       className='container'
       style={{ backgroundImage: `url(${bostonday})`}}
     >
-      <NavBar section={section}/>
+      <NavBar section={section} scrollPosition={scrollPosition} fullHeight={fullHeight}/>
       <div id='main' ref={mainRef}>
         <Link id='top'></Link>
         <About section={section}/>
