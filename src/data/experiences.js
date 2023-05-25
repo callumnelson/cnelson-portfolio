@@ -2,7 +2,7 @@ export const experiences = [
   {
     organization: 'General Assembly',
     logo: 'GA',
-    role: 'SEI Student',
+    role: 'Software Engineer',
     description: `In the Spring of 2023, I decided to pivot back to my computer science roots. Especially in my last few months at ERS, I had seen the massive potential for impactful, data-driven tools in the education space and wanted to be able to build them at scale myself. In June, I will complete a General Assembly's 420+ hour Software Engineering Immersive program focused on product development fundamentals, object-oriented programming, MVC frameworks, data modeling, and team collaboration strategies. See my portfolio below for some examples of my latest projects.`,
     start: '2023',
     end: 'Present',
