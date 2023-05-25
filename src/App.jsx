@@ -9,6 +9,7 @@ import Experiences from './components/Experiences/Experiences'
 import Portfolio from './components/Portfolio/Portfolio'
 import Contact from './components/Contact/Contact'
 import Footer from './components/Footer/Footer'
+import NameCard from './components/NameCard/NameCard'
 
 // assets
 import bostonday from './assets/images/bostonday.png'
@@ -55,6 +56,7 @@ function App() {
       <NavBar section={section} scrollPosition={scrollPosition} fullHeight={fullHeight}/>
       <div id='main' ref={mainRef}>
         <Link id='top'></Link>
+        <NameCard location={'site'} />
         <About section={section}/>
         <Experiences />
         <Portfolio />

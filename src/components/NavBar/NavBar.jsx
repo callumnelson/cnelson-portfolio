@@ -11,8 +11,8 @@ import styles from './NavBar.module.css'
 const NavBar = ({section, scrollPosition, fullHeight}) => {
   
   return (
-    <nav className={styles.navbar}>
-      <NameCard />
+    <nav className={`${styles.navbar} ${section === 'landing' ? styles.hideMobile : ''}`}>
+      <NameCard location={'nav'}/>
       <div className={styles.menu}>
         <div 
           className={styles.progressBar}

@@ -71,12 +71,15 @@
   }
 
   .navbar {
+    top: 0;
     padding: 0;
     width: 100%;
+    position: fixed;
     max-height: 75px;
     justify-content: center;
+    transition: all 0.5s ease-in-out;
   }
-
+  
   .destinations {
     flex-direction: row;
     width: 100%;
@@ -84,8 +87,14 @@
     align-items: center;
     margin: 0;
   }
-
+  
   .menu {
     width: 100%;
+  }
+  
+  .hideMobile {
+    max-height: 0;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
   }
 }
