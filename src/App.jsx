@@ -58,8 +58,8 @@ function App() {
         <Experiences />
         <Portfolio />
         <Contact />
+        <Footer location={'site'}/>
       </div>
-      <Footer location={'site'}/>
     </div>
   )
 }

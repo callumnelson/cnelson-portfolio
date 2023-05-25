@@ -1,22 +1,21 @@
 .container {
+  width: calc(100% - 2*var(--sectionMargin));
   display: flex;
-  width: 100%;
   padding: 30px;
   border-radius: 5px;
   align-items: center;
   flex-direction: column;
-  margin-left: var(--sectionMargin);
-  margin-right: var(--sectionMargin);
+  margin-bottom: var(--sectionMargin);
   background-color: var(--tertiaryTransparent);
 }
 
 .container form {
   gap: 15px;
-  width: max(50%, 300px);
   padding: 30px;
   display: flex;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
+  width: max(50%, 300px);
 }
 
 .container input, textarea {
@@ -24,20 +23,20 @@
   resize: none;
   padding: 1.5rem;
   border-radius: 5px;
-  background: var(--tertiary);
   color: var(--whiteText);
+  background: var(--tertiary);
   border: 1px solid var(--primary);
 }
 
 .container button {
-  width: max(20%, 150px);
   padding: 10px;
-  color: var(--whiteText);
   font-size: 18px;
   margin-top: 15px;
   border-radius: 20px;
-  border: 1px solid var(--primary);
+  width: max(20%, 150px);
+  color: var(--whiteText);
   background-color: transparent;
+  border: 1px solid var(--primary);
 }
 
 .container button:hover {
@@ -49,14 +48,14 @@
 .container button:disabled {
   cursor: not-allowed;
   background: transparent;
-  border: 1px solid var(--primaryTransparent);
   transition: all 1s ease-in-out;
+  border: 1px solid var(--primaryTransparent);
 }
 
 .formLoading input, .formLoading textarea {
-  border: 1px solid var(--primaryTransparent);
-  background: transparent;
   color: lightgray;
+  background: transparent;
+  border: 1px solid var(--primaryTransparent);
 }
 
 .hideMessage p {
