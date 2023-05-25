@@ -24,9 +24,9 @@
   resize: none;
   padding: 1.5rem;
   border-radius: 5px;
-  background: transparent;
+  background: var(--tertiary);
   color: var(--whiteText);
-  border: 2px solid var(--primary);
+  border: 1px solid var(--primary);
 }
 
 .container button {
@@ -36,13 +36,38 @@
   font-size: 18px;
   margin-top: 15px;
   border-radius: 20px;
-  border: 2px solid var(--primary);
-  background-color: var(--secondary);
+  border: 1px solid var(--primary);
+  background-color: transparent;
 }
 
 .container button:hover {
   cursor: pointer;
-  border: 2px solid var(--primary);
   background-color: var(--tertiary);
   transition: background-color 0.25s ease-in-out;
 }
+
+.container button:disabled {
+  cursor: not-allowed;
+  background: transparent;
+  border: 1px solid var(--primaryTransparent);
+  transition: all 1s ease-in-out;
+}
+
+.formLoading input, .formLoading textarea {
+  border: 1px solid var(--primaryTransparent);
+  background: transparent;
+  color: lightgray;
+}
+
+.hideMessage p {
+  margin-bottom: 0;
+  color: transparent;
+  transition: color 10s ease-in-out;
+}
+
+.message p {
+  margin-bottom: 0;
+  color: var(--whiteText);
+  transition: color 0.5s ease-in-out;
+}
+

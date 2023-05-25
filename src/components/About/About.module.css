@@ -31,13 +31,12 @@
   font-size: 18px;
   margin-top: 15px;
   border-radius: 20px;
-  border: 2px solid var(--primary);
-  background-color: var(--secondary);
+  border: 1px solid var(--primary);
+  background-color: transparent;
 }
 
 .about button:hover {
   cursor: pointer;
-  border: 2px solid var(--primary);
   background-color: var(--tertiary);
   transition: background-color 0.25s ease-in-out;
 }
