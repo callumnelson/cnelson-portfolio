@@ -19,7 +19,10 @@ const Contact = () => {
     message: ''
   })
   const [loading, setLoading] = useState(false)
-  const [message, setMessage] = useState('')
+  const [message, setMessage] = useState({
+    status: false,
+    text: `Thanks for reaching out. I'll be in touch!`
+  })
 
   const handleChange = (evt) => {
     setFormData({ ...formData, [evt.target.name]: evt.target.value })
@@ -28,11 +31,11 @@ const Contact = () => {
   const onSubmit = async (e) => {
     e.preventDefault()
     setLoading(true)
-    setMessage(`Thanks for reaching out. I'll be in touch!`)
+    setMessage({...message, status: true})
     try {
       const response = await emailService.sendEmail(formData)
       if (!response){
-        setMessage(`Hmmm something went wrong. Please try again!`)
+        setMessage({status: false, text: `Hmmm something went wrong. Please try again!`})
         setLoading(false)
         throw new Error('Oops, something went wrong')
       }
@@ -42,12 +45,12 @@ const Contact = () => {
           user_email: '',
           message: ''
         })
-        setMessage('')
+        setMessage({...message, status: false})
         setLoading(false)
       }
       else {
         setLoading(false)
-        setMessage(`Hmmm something went wrong. Please try again!`)
+        setMessage({status: false, text: `Hmmm something went wrong. Please try again!`})
         throw new Error('Oops, something went wrong')
       }
     } catch (err) {
@@ -61,8 +64,8 @@ const Contact = () => {
     >
     <Link id='contact'></Link>
     <SectionHeader sectionName={'Contact'} />
-    <div className={message ? styles.message : styles.hideMessage}>
-      <p>{message}</p>
+    <div className={message.status ? styles.message : styles.hideMessage}>
+      <p>{message.text}</p>
     </div>
     <form 
       className={loading ? styles.formLoading : ''}
