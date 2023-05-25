@@ -1,0 +1,15 @@
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+
+.container > a {
+  color: var(--whiteText);
+}
+
+.container > a:hover {
+  color:rgb(74, 150, 255);
+  transition: color 0.25s ease-in-out;
+}
