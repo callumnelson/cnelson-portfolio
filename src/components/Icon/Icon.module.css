@@ -1,12 +1,11 @@
 .GA {
-  width: 4vw;
-  display: flex;
+  width: max(4vw, 50px);
 }
 
 .ERS, .KIPP, .BROOKE {
-  width: 4vw;
+  width: max(4vw, 50px);
 }
 
 .BROWN {
-  height: 4vw;
+  width: max(4vw, 50px);
 }

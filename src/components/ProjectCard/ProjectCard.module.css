@@ -1,12 +1,12 @@
 .container {
-  width: 100%;
+  gap: 30px;
   display: flex;
   padding: 30px;
+  margin: 0 30px;
   border-radius: 5px;
   flex-direction: column;
   color: var(--whiteText);
   justify-content: space-between;
-  gap: 30px;
   border-top: 3px solid transparent;
   border-right: 3px solid transparent;
   border-bottom: 3px solid transparent;
@@ -23,7 +23,7 @@
 }
 
 .container header h1 {
-  font-size: 2.5vw;
+  font-size: max(2.5vw, 32px);
 }
 
 .body {
@@ -32,10 +32,14 @@
   gap: 30px;
 }
 
+.body > img:first-child {
+  width: 40%;
+}
 
 .info {
-  display: flex;
   width: 100%;
+  display: flex;
+  gap: 30px;
   flex-direction: column;
   justify-content: space-evenly;
   padding-bottom: 15px;
@@ -59,7 +63,9 @@
 
 .stack {
   display: flex;
-  justify-content: start;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .stack img {
@@ -80,3 +86,24 @@
   justify-content: space-between;
 }
 
+@media only screen and (max-width: 1024px) {
+  .body {
+    flex-direction: column;
+    align-items: center;
+  }
+  .body > img:first-child {
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .container {
+    padding: 15px;
+    margin: 0 30px;
+  }
+  .links {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+}
