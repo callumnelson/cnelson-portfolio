@@ -2,7 +2,7 @@
 import { HashLink } from 'react-router-hash-link';
 
 // components
-import Footer from '../Folder/Footer';
+import Footer from '../Footer/Footer';
 
 // assets
 import headshot from '../../assets/images/headshot.png'

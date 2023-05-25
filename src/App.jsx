@@ -8,7 +8,7 @@ import About from './components/About/About'
 import Experiences from './components/Experiences/Experiences'
 import Portfolio from './components/Portfolio/Portfolio'
 import Contact from './components/Contact/Contact'
-import Footer from './components/Folder/Footer'
+import Footer from './components/Footer/Footer'
 
 // assets
 import bostonday from './assets/images/bostonday.png'

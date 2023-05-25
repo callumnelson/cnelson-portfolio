@@ -16,7 +16,6 @@
 
 .siteFooter {
   width: 100%;
-  display: flex;
   display: none;
   align-items: center;
   justify-content: space-evenly;
@@ -32,3 +31,9 @@
   transition: color 0.25s ease-in-out;
 }
 
+@media only screen and (max-width: 920px) {
+  .siteFooter {
+    display: flex;
+    height: 10%;
+  }
+}

@@ -54,3 +54,12 @@ h1, input, textarea {
 p {
   font-size: 18px;
 }
+
+@media only screen and (max-width: 920px) {
+  #main {
+    width: 100%;
+  }
+  .container {
+    flex-direction: column;
+  }
+}

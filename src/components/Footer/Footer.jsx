@@ -1,25 +1,26 @@
-// components
+// npm modules
 import { Link } from "react-router-dom"
 
-// styling
-import './Footer.css'
+// css
+import styles from './Footer.module.css'
 
-const Footer = () => {
+const Footer = ({location}) => {
   return (
-    <footer id="footer">
-      <div className="icon-container">
-        <Link to="https://github.com/callumnelson" target="_blank" rel="noreferrer">
-          <i className="fa-brands fa-github fa-2xl"></i>
-        </Link>
-        <Link to="mailto:callum.nelson95@gmail.com" target="_blank" rel="noreferrer">
-          <i className="fa-solid fa-envelope fa-2xl"></i>
-        </Link>
-        <Link to="https://www.linkedin.com/callum-nelson" target="_blank" rel="noreferrer">
-          <i className="fa-brands fa-linkedin fa-2xl"></i>
-        </Link>
-      </div>
-    </footer>
+    <div className={location === 'nav' ? styles.navFooter : styles.siteFooter}>
+      <Link to="https://github.com/callumnelson" target="_blank" rel="noreferrer">
+        <i className="fa-brands fa-github fa-xl"></i>
+      </Link>
+      <Link to="mailto:callum.nelson95@gmail.com" target="_blank" rel="noreferrer">
+        <i className="fa-solid fa-envelope fa-xl"></i>
+      </Link>
+      <Link to="https://www.linkedin.com/in/callum-nelson/" target="_blank" rel="noreferrer">
+        <i className="fa-brands fa-linkedin fa-xl"></i>
+      </Link>
+      <Link to="https://docs.google.com/document/d/1TnQtn5dfgpeaexHJMzqC55XDiOAJKQeYs6MKgJAkLdc/edit?usp=sharing" target="_blank" rel="noreferrer">
+        <i className="fa-solid fa-file-lines fa-xl"></i>
+      </Link>
+    </div>
   )
 }
  
-export default Footer;
+export default Footer
