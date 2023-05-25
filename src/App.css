@@ -56,6 +56,9 @@ p {
 }
 
 @media only screen and (max-width: 920px) {
+  .container {
+    flex-direction: column;
+  }
   #main {
     width: 100%;
     flex-direction: column;

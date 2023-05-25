@@ -32,6 +32,10 @@
 }
 
 @media only screen and (max-width: 920px) {
+  .navFooter {
+    display: none;
+  }
+  
   .siteFooter {
     display: flex;
     min-height: 100px;
