@@ -75,6 +75,7 @@
     padding: 0;
     width: 100%;
     position: fixed;
+    z-index: 2;
     max-height: 75px;
     justify-content: center;
     transition: all 0.5s ease-in-out;
