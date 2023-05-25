@@ -2,8 +2,8 @@ export const projects = [
   {
     title: 'callumnelson.dev',
     screenshot: 'portfolio',
-    description: `I built this site using React with Vite as a way to share my portfolio and experiences with the world. I'll continue to update it with new work as I finish projects, so come back soon for more updates!`,
-    technologies: ['REACT', 'VITE', 'CSS'],
+    description: `I built this site using React with Vite and a serverless Google Cloud Function-based back-end as a way to share my portfolio and experiences with the world. I'll continue to update it with new work as I finish projects, so come back soon for more updates!`,
+    technologies: ['REACT', 'VITE', 'GCF', 'CSS'],
     githubLink: 'https://github.com/callumnelson/applicant-front-end',
     deployedLink: 'https://job-applicant.netlify.app/'
   },

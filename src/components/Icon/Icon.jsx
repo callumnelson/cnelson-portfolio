@@ -15,6 +15,7 @@ import express from '../../assets/icons/express.png'
 import ejs from '../../assets/icons/ejs.png'
 import mui from '../../assets/icons/mui.png'
 import vite from '../../assets/icons/vite.png'
+import googlecloudfunctions from '../../assets/icons/googlecloudfunctions.png'
 
 // styles
 import styles from './Icon.module.css'
@@ -36,7 +37,8 @@ const Icon = ({ category }) => {
     EXPRESS: express,
     EJS: ejs,
     MUI: mui,
-    VITE: vite
+    VITE: vite,
+    GCF: googlecloudfunctions
   }
 
   return (
