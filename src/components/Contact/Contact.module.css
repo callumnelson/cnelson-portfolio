@@ -5,6 +5,7 @@
   border-radius: 5px;
   align-items: center;
   flex-direction: column;
+  margin-bottom: var(--sectionMargin);
   background-color: var(--tertiaryTransparent);
 }
 
@@ -69,3 +70,8 @@
   transition: color 0.5s ease-in-out;
 }
 
+@media only screen and (max-width: 920px) {
+  .container {
+    margin-bottom: 0;
+  }
+}
