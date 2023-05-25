@@ -35,9 +35,9 @@ function App() {
       setPortfolioTop(document.getElementById('portfolio').offsetTop)
       setContactTop(document.getElementById('contact').offsetTop)
       setScrollPosition(main.scrollTop)
-      if (main.scrollTop >= aboutTop - 50 && main.scrollTop < experienceTop - 50) setSection('about')
-      else if (main.scrollTop > experienceTop - 50 && main.scrollTop < portfolioTop - 50) setSection('experience')
-      else if (main.scrollTop >= portfolioTop - 50 && main.scrollTop < contactTop - aboutTop) setSection('portfolio')
+      if (main.scrollTop >= aboutTop - 100 && main.scrollTop < experienceTop - 100) setSection('about')
+      else if (main.scrollTop > experienceTop - 100 && main.scrollTop < portfolioTop - 100) setSection('experience')
+      else if (main.scrollTop >= portfolioTop - 100 && main.scrollTop < contactTop - aboutTop) setSection('portfolio')
       else if (main.scrollTop >= contactTop - aboutTop) setSection('contact')
       else setSection('landing')
     }
@@ -45,6 +45,7 @@ function App() {
     updatePosition()
     return () => main.removeEventListener('scroll', updatePosition)
   }, [aboutTop, experienceTop, portfolioTop, contactTop])
+  console.log(aboutTop, experienceTop, portfolioTop, contactTop)
 
   return (
     <div 

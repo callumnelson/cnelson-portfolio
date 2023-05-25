@@ -1,11 +1,9 @@
 // modules
-import { HashLink } from 'react-router-hash-link';
+import { HashLink } from 'react-router-hash-link'
 
 // components
-import Footer from '../Footer/Footer';
-
-// assets
-import headshot from '../../assets/images/headshot.png'
+import Footer from '../Footer/Footer'
+import NameCard from '../NameCard/NameCard'
 
 // styling
 import styles from './NavBar.module.css'
@@ -14,11 +12,7 @@ const NavBar = ({section, scrollPosition, fullHeight}) => {
   
   return (
     <nav className={styles.navbar}>
-      <div className={styles.name}>
-        <img src={ headshot } alt="Callum Nelson Headshot" />
-        <h1>Callum</h1>
-        <h1>Nelson</h1>
-      </div>
+      <NameCard />
       <div className={styles.menu}>
         <div 
           className={styles.progressBar}

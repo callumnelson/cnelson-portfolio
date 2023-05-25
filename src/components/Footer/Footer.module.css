@@ -35,9 +35,9 @@
   .navFooter {
     display: none;
   }
-  
+
   .siteFooter {
     display: flex;
-    min-height: 100px;
+    min-height: 75px;
   }
 }

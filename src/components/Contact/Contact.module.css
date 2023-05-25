@@ -5,7 +5,6 @@
   border-radius: 5px;
   align-items: center;
   flex-direction: column;
-  margin-bottom: var(--sectionMargin);
   background-color: var(--tertiaryTransparent);
 }
 
