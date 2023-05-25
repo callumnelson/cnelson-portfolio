@@ -47,6 +47,9 @@ const NavBar = ({section, scrollPosition, fullHeight}) => {
         <Link to="https://www.linkedin.com/in/callum-nelson/" target="_blank" rel="noreferrer">
           <i className="fa-brands fa-linkedin fa-xl"></i>
         </Link>
+        <Link to="https://docs.google.com/document/d/1TnQtn5dfgpeaexHJMzqC55XDiOAJKQeYs6MKgJAkLdc/edit?usp=sharing" target="_blank" rel="noreferrer">
+          <i className="fa-solid fa-file-lines fa-xl"></i>
+        </Link>
       </div>
     </nav>
   )
