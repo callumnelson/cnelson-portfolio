@@ -4,9 +4,9 @@ import { Link } from "react-router-dom"
 // css
 import styles from './Footer.module.css'
 
-const Footer = () => {
+const Footer = ({location}) => {
   return (
-    <div className={styles.container}>
+    <div className={location === 'nav' ? styles.navFooter : styles.siteFooter}>
       <Link to="https://github.com/callumnelson" target="_blank" rel="noreferrer">
         <i className="fa-brands fa-github fa-xl"></i>
       </Link>

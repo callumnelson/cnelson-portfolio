@@ -40,7 +40,7 @@ const NavBar = ({section, scrollPosition, fullHeight}) => {
           </HashLink>
         </div>
       </div>
-      <Footer />
+      <Footer location={'nav'}/>
     </nav>
   )
 }

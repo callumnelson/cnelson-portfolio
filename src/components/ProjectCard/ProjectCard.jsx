@@ -14,10 +14,10 @@ const ProjectCard = ({project}) => {
       <header>
         <h1>{project.title}</h1>
       </header>
+      <p>{project.description}</p>
       <div className={styles.body}>
         <Screenshot category={project.screenshot}/>
         <div className={styles.info}>
-          <p>{project.description}</p>
           <div className={styles.stack}>
             {project.technologies.map( (tech, idx) => (
               <div key={idx}>
@@ -27,14 +27,14 @@ const ProjectCard = ({project}) => {
             ))}
           </div>
           <div className={styles.links}>
-          <Link to={project.githubLink} target="_blank" rel="noreferrer">
-            <i className="fa-brands fa-github fa-xl"></i>
-            <p>View on GitHub</p>
-          </Link>
-          <Link to={project.deployedLink} target="_blank" rel="noreferrer">
-            <i className="fa-solid fa-globe fa-xl"></i>
-            <p>Visit deployed site</p>
-          </Link>
+            <Link to={project.githubLink} target="_blank" rel="noreferrer">
+              <i className="fa-brands fa-github fa-xl"></i>
+              <p>View on GitHub</p>
+            </Link>
+            <Link to={project.deployedLink} target="_blank" rel="noreferrer">
+              <i className="fa-solid fa-globe fa-xl"></i>
+              <p>Visit deployed site</p>
+            </Link>
           </div>
         </div>
       </div>
