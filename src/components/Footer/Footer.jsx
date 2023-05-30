@@ -1,10 +1,10 @@
 // npm modules
-import { Link } from "react-router-dom"
+import { Link } from 'react-router-dom'
 
 // css
 import styles from './Footer.module.css'
 
-const Footer = ({location}) => {
+const Footer = ({ location }) => {
   return (
     <div className={location === 'nav' ? styles.navFooter : styles.siteFooter}>
       <Link to="https://github.com/callumnelson" target="_blank" rel="noreferrer">
@@ -16,11 +16,15 @@ const Footer = ({location}) => {
       <Link to="https://www.linkedin.com/in/callum-nelson/" target="_blank" rel="noreferrer">
         <i className="fa-brands fa-linkedin fa-xl"></i>
       </Link>
-      <Link to="https://docs.google.com/document/d/1TnQtn5dfgpeaexHJMzqC55XDiOAJKQeYs6MKgJAkLdc/edit?usp=sharing" target="_blank" rel="noreferrer">
+      <Link
+        to="https://docs.google.com/document/d/1TnQtn5dfgpeaexHJMzqC55XDiOAJKQeYs6MKgJAkLdc/edit?usp=sharing"
+        target="_blank"
+        rel="noreferrer"
+      >
         <i className="fa-solid fa-file-lines fa-xl"></i>
       </Link>
     </div>
   )
 }
- 
+
 export default Footer

@@ -1,5 +1,5 @@
 .container {
-  width: calc(100% - 2*var(--sectionMargin));
+  width: calc(100% - 2 * var(--sectionMargin));
   display: flex;
   padding: 30px;
   border-radius: 5px;
@@ -18,7 +18,8 @@
   width: max(50%, 300px);
 }
 
-.container input, textarea {
+.container input,
+textarea {
   width: 100%;
   resize: none;
   padding: 1.5rem;
@@ -52,7 +53,8 @@
   border: 1px solid var(--primaryTransparent);
 }
 
-.formLoading input, .formLoading textarea {
+.formLoading input,
+.formLoading textarea {
   color: lightgray;
   background: transparent;
   border: 1px solid var(--primaryTransparent);

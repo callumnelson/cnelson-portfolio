@@ -8,16 +8,12 @@ import NameCard from '../NameCard/NameCard'
 // styling
 import styles from './NavBar.module.css'
 
-const NavBar = ({section, scrollPosition, fullHeight}) => {
-  
+const NavBar = ({ section, scrollPosition, fullHeight }) => {
   return (
     <nav className={`${styles.navbar} ${section === 'landing' ? styles.hideMobile : ''}`}>
-      <NameCard location={'nav'}/>
+      <NameCard location={'nav'} />
       <div className={styles.menu}>
-        <div 
-          className={styles.progressBar}
-          style={{height: `${scrollPosition/fullHeight*100}%`}}
-        ></div>
+        <div className={styles.progressBar} style={{ height: `${(scrollPosition / fullHeight) * 100}%` }}></div>
         <div className={styles.destinations}>
           <HashLink smooth to={'/#about'}>
             <p className={section === 'about' ? styles.selected : ''}>About</p>
@@ -33,7 +29,7 @@ const NavBar = ({section, scrollPosition, fullHeight}) => {
           </HashLink>
         </div>
       </div>
-      <Footer location={'nav'}/>
+      <Footer location={'nav'} />
     </nav>
   )
 }

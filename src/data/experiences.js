@@ -11,7 +11,8 @@ export const experiences = [
     organization: 'ERS',
     logo: 'ERS',
     role: 'Principal Associate',
-    description: 'As a Principal Associate at Education Resource Strategies, I helped to lead consulting teams focused in supporting public school district leaders make strategic and equitable resource decisions. Most recently, I worked with the Racial Equity Office in Dallas ISD to conduct a multi-year analysis of racial equity outcomes and convene a cross-functional working group to action plan around the findings.',
+    description:
+      'As a Principal Associate at Education Resource Strategies, I helped to lead consulting teams focused in supporting public school district leaders make strategic and equitable resource decisions. Most recently, I worked with the Racial Equity Office in Dallas ISD to conduct a multi-year analysis of racial equity outcomes and convene a cross-functional working group to action plan around the findings.',
     start: '2020',
     end: '2023',
   },
@@ -39,6 +40,4 @@ export const experiences = [
     start: '2013',
     end: '2017',
   },
-  
 ]
-

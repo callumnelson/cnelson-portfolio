@@ -18,7 +18,8 @@
   transition: all 0.5s ease-in-out;
 }
 
-.container p, .container h1 {
+.container p,
+.container h1 {
   margin: 0;
 }
 
@@ -56,7 +57,9 @@
   justify-content: space-evenly;
 }
 
-.links i, .links p, .links a {
+.links i,
+.links p,
+.links a {
   text-decoration: none;
   color: var(--whiteText);
 }

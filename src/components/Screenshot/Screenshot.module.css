@@ -1,4 +1,7 @@
-.othello, .battleofthebooks, .applicant, .portfolio {
+.othello,
+.battleofthebooks,
+.applicant,
+.portfolio {
   border-radius: 2px;
   border: 0.5px solid var(--primary);
 }
