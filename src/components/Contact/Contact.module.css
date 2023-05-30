@@ -23,6 +23,7 @@ textarea {
   width: 100%;
   resize: none;
   padding: 1.5rem;
+  font-size: 14px;
   border-radius: 5px;
   color: var(--whiteText);
   background: var(--tertiary);
