@@ -2,7 +2,8 @@
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   margin: 0;
   height: 100%;
   overflow: hidden;
@@ -45,7 +46,9 @@ html, body {
   border-left: 0.5px solid black;
 }
 
-h1, input, textarea {
+h1,
+input,
+textarea {
   margin: 0;
   font-weight: 200;
   font-family: 'Alegreya Sans SC', sans-serif;

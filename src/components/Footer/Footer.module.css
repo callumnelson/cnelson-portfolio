@@ -10,7 +10,7 @@
 }
 
 .navFooter > a:hover {
-  color:rgb(74, 150, 255);
+  color: rgb(74, 150, 255);
   transition: color 0.25s ease-in-out;
 }
 
@@ -27,7 +27,7 @@
 }
 
 .siteFooter > a:hover {
-  color:rgb(74, 150, 255);
+  color: rgb(74, 150, 255);
   transition: color 0.25s ease-in-out;
 }
 

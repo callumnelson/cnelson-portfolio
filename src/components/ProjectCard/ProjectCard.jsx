@@ -8,7 +8,7 @@ import Icon from '../Icon/Icon'
 // css
 import styles from './ProjectCard.module.css'
 
-const ProjectCard = ({project}) => {
+const ProjectCard = ({ project }) => {
   return (
     <div className={styles.container}>
       <header>
@@ -16,14 +16,14 @@ const ProjectCard = ({project}) => {
       </header>
       <p>{project.description}</p>
       <div className={styles.body}>
-        <Screenshot category={project.screenshot}/>
+        <Screenshot category={project.screenshot} />
         <div className={styles.info}>
           <div className={styles.stack}>
-            {project.technologies.map( (tech, idx) => (
+            {project.technologies.map((tech, idx) => (
               <div key={idx}>
-                <Icon category={tech} key={idx}/>
+                <Icon category={tech} key={idx} />
                 <p>{tech}</p>
-              </div> 
+              </div>
             ))}
           </div>
           <div className={styles.links}>
@@ -41,5 +41,5 @@ const ProjectCard = ({project}) => {
     </div>
   )
 }
- 
+
 export default ProjectCard

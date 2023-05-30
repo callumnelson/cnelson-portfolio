@@ -38,12 +38,10 @@ const Icon = ({ category }) => {
     EJS: ejs,
     MUI: mui,
     VITE: vite,
-    GCF: googlecloudfunctions
+    GCF: googlecloudfunctions,
   }
 
-  return (
-    <img className={styles[category]} src={icons[category]} alt={`A ${category} icon.`}/>
-  )
+  return <img className={styles[category]} src={icons[category]} alt={`A ${category} icon.`} />
 }
 
 export default Icon

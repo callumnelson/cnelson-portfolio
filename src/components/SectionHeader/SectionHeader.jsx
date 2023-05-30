@@ -1,8 +1,7 @@
-
 // css
 import styles from './SectionHeader.module.css'
 
-const SectionHeader = ({sectionName}) => {
+const SectionHeader = ({ sectionName }) => {
   return (
     <>
       <div className={styles.header}>
@@ -12,5 +11,5 @@ const SectionHeader = ({sectionName}) => {
     </>
   )
 }
- 
+
 export default SectionHeader

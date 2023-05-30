@@ -6,8 +6,8 @@ export const sendEmail = async (contactFormData) => {
       method: 'POST',
       body: JSON.stringify(contactFormData),
       headers: {
-        'Content-Type': 'application/json'
-      }
+        'Content-Type': 'application/json',
+      },
     })
     return functionRes
   } catch (err) {

@@ -42,7 +42,9 @@
     padding-bottom: 0;
   }
 
-  .timeline, .last, .circle {
+  .timeline,
+  .last,
+  .circle {
     display: none;
   }
 }

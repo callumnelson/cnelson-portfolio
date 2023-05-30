@@ -49,19 +49,16 @@ function App() {
   console.log(aboutTop, experienceTop, portfolioTop, contactTop)
 
   return (
-    <div 
-      className='container'
-      style={{ backgroundImage: `url(${bostonday})`}}
-    >
-      <NavBar section={section} scrollPosition={scrollPosition} fullHeight={fullHeight}/>
-      <div id='main' ref={mainRef}>
-        <Link id='top'></Link>
+    <div className="container" style={{ backgroundImage: `url(${bostonday})` }}>
+      <NavBar section={section} scrollPosition={scrollPosition} fullHeight={fullHeight} />
+      <div id="main" ref={mainRef}>
+        <Link id="top"></Link>
         <NameCard location={'site'} />
-        <About section={section}/>
+        <About section={section} />
         <Experiences />
         <Portfolio />
         <Contact />
-        <Footer location={'site'}/>
+        <Footer location={'site'} />
       </div>
     </div>
   )

@@ -1,13 +1,13 @@
 //npm modules
-import { useState, useEffect } from "react"
-import { getMinutes } from "../../modules/functions"
+import { useState, useEffect } from 'react'
+import { getMinutes } from '../../modules/functions'
 
-const Clock = ({setDaytime}) => {
+const Clock = ({ setDaytime }) => {
   const [date, setDate] = useState(new Date())
-  
+
   const time = date.toLocaleTimeString([], {
     hour: 'numeric',
-    minute: 'numeric'
+    minute: 'numeric',
   })
 
   const currentTime = getMinutes(time)
@@ -24,12 +24,7 @@ const Clock = ({setDaytime}) => {
     return () => clearInterval(intervalId)
   }, [currentTime, setDaytime])
 
-
-  return (
-    <p className="display-items">
-      {time}
-    </p>
-  )
+  return <p className="display-items">{time}</p>
 }
 
 export default Clock

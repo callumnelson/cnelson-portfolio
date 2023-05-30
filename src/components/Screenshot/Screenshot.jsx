@@ -12,12 +12,10 @@ const Screenshot = ({ category }) => {
     applicant,
     battleofthebooks,
     othello,
-    portfolio
+    portfolio,
   }
 
-  return (
-    <img className={styles[category]} src={screenshots[category]} alt={`A screenshot of ${category}.`}/>
-  )
+  return <img className={styles[category]} src={screenshots[category]} alt={`A screenshot of ${category}.`} />
 }
 
 export default Screenshot
