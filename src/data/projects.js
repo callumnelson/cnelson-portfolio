@@ -11,7 +11,7 @@ export const projects = [
     title: 'appliCANt',
     screenshot: 'applicant',
     description:
-      'appliCANt is a one-stop-shop for managing your job search. The platform incorporates resources to support the job search (e.g. interview prep guides) with a seamless, spreadsheet-style interface for tracking your applications.',
+      'appliCANt is a one-stop-shop for managing your job search. The platform is a MERN stack app that incorporates resources to support the job search (e.g. interview prep guides) with a seamless, spreadsheet-style interface for tracking your applications.',
     technologies: ['REACT', 'MUI', 'MONGODB', 'EXPRESS', 'NODE'],
     githubLink: 'https://github.com/callumnelson/applicant-front-end',
     deployedLink: 'https://job-applicant.netlify.app/',
@@ -19,7 +19,7 @@ export const projects = [
   {
     title: 'Battle of the Books',
     screenshot: 'battleofthebooks',
-    description: `Battle of the Books takes teachers' classroom libraries digital. Students can track their reading and submit tickets to their teachers for credit for finishing books. The app consumes Google's Books API to seamlessly pull accurate information on titles, authors, and page numbers.`,
+    description: `Battle of the Books is a MEN stack app that takes teachers' classroom libraries digital. Students can track their reading and submit tickets to their teachers for credit for finishing books. The app consumes Google's Books API to seamlessly pull accurate information on titles, authors, and page numbers.`,
     technologies: ['MONGODB', 'EXPRESS', 'NODE', 'EJS'],
     githubLink: 'https://github.com/callumnelson/battle-of-the-books',
     deployedLink: 'https://battle-of-the-books.fly.dev/',
