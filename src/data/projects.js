@@ -4,8 +4,8 @@ export const projects = [
     screenshot: 'portfolio',
     description: `I built this site using React with Vite and a serverless Google Cloud Function-based back-end as a way to share my portfolio and experiences with the world. I'll continue to update it with new work as I finish projects, so come back soon for more updates!`,
     technologies: ['REACT', 'VITE', 'GCF', 'CSS'],
-    githubLink: 'https://github.com/callumnelson/applicant-front-end',
-    deployedLink: 'https://job-applicant.netlify.app/',
+    githubLink: 'https://github.com/callumnelson/cnelson-portfolio',
+    deployedLink: 'https://callumnelson.dev',
   },
   {
     title: 'appliCANt',
