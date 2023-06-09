@@ -16,6 +16,9 @@ import ejs from '../../assets/icons/ejs.png'
 import mui from '../../assets/icons/mui.png'
 import vite from '../../assets/icons/vite.png'
 import googlecloudfunctions from '../../assets/icons/googlecloudfunctions.png'
+import postgres from '../../assets/icons/postgres.png'
+import ts from '../../assets/icons/ts.png'
+import recharts from '../../assets/icons/recharts.png'
 
 // styles
 import styles from './Icon.module.css'
@@ -39,6 +42,9 @@ const Icon = ({ category }) => {
     MUI: mui,
     VITE: vite,
     GCF: googlecloudfunctions,
+    TS: ts,
+    POSTGRES: postgres,
+    RECHARTS: recharts,
   }
 
   return <img className={styles[category]} src={icons[category]} alt={`A ${category} icon.`} />

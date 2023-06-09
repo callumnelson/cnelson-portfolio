@@ -1,5 +1,13 @@
 export const projects = [
   {
+    title: '$avvier',
+    screenshot: 'savvier',
+    description: `$avvier is a highly customizable budgeting and personal finance app with robust data dashboards and goal-setting tools. Users can customize the categories and sub categories they use to code their transactions and watch dashboards update in real time.`,
+    technologies: ['TS', 'POSTGRES', 'EXPRESS', 'REACT', 'NODE', 'RECHARTS'],
+    githubLink: 'https://github.com/callumnelson/savvier-front-end',
+    deployedLink: 'https://savvier.netlify.app',
+  },
+  {
     title: 'callumnelson.dev',
     screenshot: 'portfolio',
     description: `I built this site using React with Vite and a serverless Google Cloud Function-based back-end as a way to share my portfolio and experiences with the world. I'll continue to update it with new work as I finish projects, so come back soon for more updates!`,
