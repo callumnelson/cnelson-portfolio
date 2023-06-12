@@ -36,9 +36,9 @@ function App() {
       setPortfolioTop(document.getElementById('portfolio').offsetTop)
       setContactTop(document.getElementById('contact').offsetTop)
       setScrollPosition(main.scrollTop)
-      if (main.scrollTop >= aboutTop - 100 && main.scrollTop < experienceTop - 100) setSection('about')
-      else if (main.scrollTop > experienceTop - 100 && main.scrollTop < portfolioTop - 100) setSection('experience')
-      else if (main.scrollTop >= portfolioTop - 100 && main.scrollTop < contactTop - aboutTop) setSection('portfolio')
+      if (main.scrollTop >= aboutTop - 100 && main.scrollTop < portfolioTop - 100) setSection('about')
+      else if (main.scrollTop > portfolioTop - 100 && main.scrollTop < experienceTop - 100) setSection('portfolio')
+      else if (main.scrollTop >= experienceTop - 100 && main.scrollTop < contactTop - aboutTop) setSection('experience')
       else if (main.scrollTop >= contactTop - aboutTop) setSection('contact')
       else setSection('landing')
     }
@@ -54,8 +54,8 @@ function App() {
         <Link id="top"></Link>
         <NameCard location={'site'} />
         <About section={section} />
-        <Experiences />
         <Portfolio />
+        <Experiences />
         <Contact />
         <Footer location={'site'} />
       </div>

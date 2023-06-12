@@ -18,11 +18,11 @@ const NavBar = ({ section, scrollPosition, fullHeight }) => {
           <HashLink smooth to={'/#about'}>
             <p className={section === 'about' ? styles.selected : ''}>About</p>
           </HashLink>
-          <HashLink smooth to={'/#experience'}>
-            <p className={section === 'experience' ? styles.selected : ''}>Experience</p>
-          </HashLink>
           <HashLink smooth to={'/#portfolio'}>
             <p className={section === 'portfolio' ? styles.selected : ''}>Portfolio</p>
+          </HashLink>
+          <HashLink smooth to={'/#experience'}>
+            <p className={section === 'experience' ? styles.selected : ''}>Experience</p>
           </HashLink>
           <HashLink smooth to={'/#contact'}>
             <p className={section === 'contact' ? styles.selected : ''}>Contact</p>
