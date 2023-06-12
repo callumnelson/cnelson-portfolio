@@ -1,5 +1,6 @@
 export const experiences = [
   {
+    id: 1,
     organization: 'General Assembly',
     logo: 'GA',
     role: 'Software Engineer',
@@ -8,6 +9,7 @@ export const experiences = [
     end: 'Present',
   },
   {
+    id: 2,
     organization: 'ERS',
     logo: 'ERS',
     role: 'Principal Associate',
@@ -17,6 +19,7 @@ export const experiences = [
     end: '2023',
   },
   {
+    id: 3,
     organization: 'KIPP',
     logo: 'KIPP',
     role: 'Data Analyst',
@@ -25,6 +28,7 @@ export const experiences = [
     end: '2020',
   },
   {
+    id: 4,
     organization: 'Brooke',
     logo: 'BROOKE',
     role: '7th Grade Teacher',
@@ -33,6 +37,7 @@ export const experiences = [
     end: '2018',
   },
   {
+    id: 5,
     organization: 'Brown',
     logo: 'BROWN',
     role: 'Undergraduate',

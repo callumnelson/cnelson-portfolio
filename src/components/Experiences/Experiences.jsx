@@ -1,5 +1,6 @@
 // npm modules
 import React from 'react'
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
 
 // components
@@ -13,6 +14,8 @@ import { experiences } from '../../data/experiences'
 import styles from './Experiences.module.css'
 
 const Experiences = () => {
+  const [showInfo, setShowInfo] = useState(0)
+
   return (
     <section className={styles.container}>
       <Link id="experience"></Link>
@@ -28,7 +31,12 @@ const Experiences = () => {
                 </div>
               </>
             )}
-            <ExperienceCard key={idx} content={experience} />
+            <ExperienceCard 
+              key={idx} 
+              content={experience} 
+              showInfo={showInfo}
+              setShowInfo={setShowInfo}
+            />
             {!!(idx % 2) && (
               <>
                 <div className={idx < experiences.length - 1 ? styles.timeline : styles.last}>

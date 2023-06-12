@@ -3,11 +3,12 @@
   border-radius: 5px;
   align-items: center;
   flex-direction: column;
-  margin: 0 var(--sectionMargin);
+  width: calc(100% - 2*var(--sectionMargin));
   background-color: var(--tertiaryTransparent);
 }
 
 .experiences {
+  width: 100%;
   display: grid;
   padding: 30px 0;
   grid-template-columns: 1fr 3px 1fr;

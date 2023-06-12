@@ -4,14 +4,14 @@ import styles from './ExperienceCard.module.css'
 // components
 import Icon from '../Icon/Icon'
 
-const ExperienceCard = ({ content }) => {
+const ExperienceCard = ({ content, showInfo, setShowInfo }) => {
   const empty = !content.organization
 
   return (
     <div className={empty ? styles.empty : styles.content}>
       {!empty && (
         <>
-          <header>
+          <header className={styles.header}>
             <h1>{content.organization}</h1>
             <Icon category={content.logo} />
           </header>
@@ -22,8 +22,17 @@ const ExperienceCard = ({ content }) => {
                 {content.start} - {content.end}
               </p>
             </div>
-            <p>{content.description}</p>
           </div>
+          <p
+            onClick={() => setShowInfo(showInfo === content.id ? 0 : content.id)}
+          >
+            {showInfo === content.id ? "Hide": "Show More"}
+          </p>
+          <p 
+            className={showInfo === content.id ? styles.descriptionShow : styles.descriptionHide}
+          >
+            {content.description}
+          </p>
         </>
       )}
     </div>
